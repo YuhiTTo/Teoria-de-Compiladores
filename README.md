@@ -1,1 +1,1 @@
-# Teor-a-de-Compiladores
+# Teoria-de-Compiladores
