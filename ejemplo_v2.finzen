@@ -1,0 +1,26 @@
+finanzas {
+  // Presupuestos por categoría
+  presupuesto "Gastos fijos" = 800
+  presupuesto "Ocio" = 300
+
+  // Movimientos
+  ingreso "Sueldo" monto=2500 categoria="Trabajo"
+  ingreso "Freelance" monto=800 categoria="Trabajo"
+
+  gasto "Casa" actual=450 categoria="Gastos fijos"
+  gasto "Comida" actual=280 categoria="Gastos fijos"
+  gasto "Transporte" actual=80 categoria="Gastos fijos"
+  gasto "Internet" actual=20 categoria="Gastos fijos"
+
+  gasto "Netflix" actual=45 categoria="Entretenimiento"
+  gasto "Salidas" actual=110 categoria="Ocio"
+
+  ahorro "Cuenta de ahorro" monto=400
+}
+total_ingresos
+total_gastos
+diferencia
+listar_gastos
+filtrar_gastos "Ocio"
+resumen_categoria "Gastos fijos"
+diferencia_presupuestos
