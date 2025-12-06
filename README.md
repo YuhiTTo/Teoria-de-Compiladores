@@ -46,8 +46,6 @@ Para que funcionen los comandos avanzados (`listar_gastos`, `filtrar_gastos`), d
 
 # 2. Compila enlazando el Runtime
 
-clang mi_dia.ll ../src/FinZenRuntime.cpp -o mi_programa_final -lstdc++
-
 clang++ mi_dia.ll ../src/FinZenRuntime.cpp -o mi_programa_final
 
 # 3. Ejecutar
