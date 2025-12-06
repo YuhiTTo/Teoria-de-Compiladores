@@ -1,0 +1,31 @@
+finanzas {
+  // 1. Definimos nuestros presupuestos del mes
+  presupuesto "Comida" = 600
+  presupuesto "Transporte" = 200
+  presupuesto "Ocio" = 300
+
+  // 2. Registramos nuestros ingresos
+  ingreso "Sueldo Noviembre" monto=2500
+
+  // 3. Registramos los gastos del día a día
+  gasto "Supermercado" actual=150 categoria="Comida"
+  gasto "Uber a la oficina" actual=25 categoria="Transporte"
+  gasto "Cine y Popcorn" actual=60 categoria="Ocio"
+  gasto "Almuerzo con amigos" actual=45 categoria="Comida"
+}
+
+// 4. Consultamos el estado de nuestras finanzas
+total_ingresos
+total_gastos
+diferencia
+
+// 5. Consultas específicas por categoría
+resumen_categoria "Comida"
+resumen_categoria "Ocio"
+
+// 6. Verificamos si nos estamos pasando del presupuesto
+diferencia_presupuestos
+
+// Comandos del Runtime
+listar_gastos
+filtrar_gastos "Comida"

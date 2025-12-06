@@ -1,0 +1,30 @@
+finanzas {
+  // 1. Definimos Presupuestos
+  // Presupuesto ajustado para probar la alerta
+  presupuesto "Comida" = 100
+  presupuesto "Transporte" = 200
+
+  // 2. Registramos Ingresos
+  ingreso "Sueldo" monto=1000
+
+  // 3. Registramos Gastos
+  // Gasto normal (dentro del presupuesto)
+  gasto "Uber" actual=30 categoria="Transporte"
+
+  // Gastos que excederán el presupuesto de Comida (100)
+  // 40 + 80 = 120 (¡Se pasa por 20!)
+  gasto "Almuerzo" actual=40 categoria="Comida"
+  gasto "Cena de Lujo" actual=80 categoria="Comida"
+}
+
+// 4. Reportes Numéricos
+total_ingresos
+total_gastos
+diferencia
+
+// 5. Reportes de Texto (Runtime)
+listar_gastos
+filtrar_gastos "Comida"
+
+// 6. Verificación de Presupuestos (Aquí debe salir la ALERTA)
+diferencia_presupuestos

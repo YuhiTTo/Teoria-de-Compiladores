@@ -1,5 +1,10 @@
 grammar FinZen;
 
+@header {
+#include <string>
+}
+
+
 // Parser rules
 programa
     : FINANZAS LBRACE (presupuesto_stmt | movimiento)+ RBRACE comando* EOF

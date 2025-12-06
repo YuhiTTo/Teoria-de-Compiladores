@@ -1,0 +1,13 @@
+finanzas {
+  presupuesto "Comida" = 100
+  presupuesto "Transporte" = 200
+
+  ingreso "Sueldo" monto=1000
+
+  gasto "Uber" actual=30 categoria="Transporte"
+  gasto "Almuerzo" actual=40 categoria="Comida"
+  gasto "Cena de Lujo" actual=80 categoria="Comida"
+}
+
+listar_gastos
+filtrar_gastos "Comida"

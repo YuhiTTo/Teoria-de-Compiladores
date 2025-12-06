@@ -1,0 +1,15 @@
+finanzas {
+  presupuesto "Comida" = 500
+  presupuesto "Transporte" = 200
+
+  ingreso "Sueldo" monto=2000 categoria="Trabajo"
+  gasto "Pizza" actual=50 categoria="Comida"
+  gasto "Metro" actual=10 categoria="Transporte"
+}
+
+total_ingresos
+total_gastos
+diferencia
+resumen_categoria "Comida"
+listar_gastos
+diferencia_presupuestos
